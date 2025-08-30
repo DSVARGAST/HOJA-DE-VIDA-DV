@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida - David Vargas</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Librerías para exportar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="cv-container" id="cv">
+    <!-- COLUMNA IZQUIERDA -->
+    <aside class="cv-left">
+      <div class="foto">
+        <img src="1011087040.jpg" alt="Foto de perfil">
+      </div>
+      <div class="perfil">
+        <p>Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. 
+        Siempre tengo la mejor disposición para la realización de mis labores. Busco un puesto desafiante donde pueda continuar aprendiendo y poniendo en práctica mis conocimientos.</p>
+      </div>
+
+      <section class="contacto">
+        <h3>Contacto</h3>
+        <p><strong>Celular:</strong> (+57) 3204290445</p>
+        <p><strong>Correo:</strong> davidv161212@gmail.com</p>
+        <p><strong>Dirección:</strong> Cra 8d bis #157-15</p>
+      </section>
+
+      <section class="educacion">
+        <h3>Educación</h3>
+        <p><strong>Universidad San Buenabentura</strong><br>
+         Tecnólogo En Desarrollo De Software<br>
+        <em>Cursando</em></p>
+
+        <p><strong>Colegio Instituto Colombo Sueco</strong><br>
+        Bachiller académico - 2021<br>
+      </section>
+    </aside>
+
+    <!-- COLUMNA DERECHA -->
+    <main class="cv-right">
+      <header>
+        <h1>David Vargas</h1>
+        <h2>Tecnólogo En Desarrollo De Software</h2>
+      </header>
+
+      <section class="experiencia">
+        <h3>Experiencia Laboral</h3>
+
+        <div class="trabajo">
+          <h4>Vendedor y asistente de bodega</h4>
+          <p><em>Empresa Festiplastic, Dic 2023 – Feb 2023</em></p>
+          <ul>
+            <li>Atención al cliente.</li>
+            <li>Manejo de inventarios.</li>
+            <li>Manejo de bodega.</li>
+          </ul>
+        </div>
+
+        <div class="trabajo">
+          <h4>Auxiliar Operativo</h4>
+          <p><em>Empresa Centro Comercial Cedritos 151PH, Feb 2024 – Ago 2025</em></p>
+          <ul>
+            <li>Atención al cliente.</li>
+            <li>Manejo y coordinación de parqueadero.</li>
+            <li>Asistencia técnica en entradas y salidas vehiculares.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- NUEVA SECCIÓN: REFERENCIAS PERSONALES -->
+      <section class="referencias">
+        <h3>Referencias Personales</h3>
+
+        <div class="referencia">
+          <p><strong>Jeison Stiven Vargas Tapias</strong><br>
+          Cargo: Administrador de empresas<br>
+          Tel: (+57) 3017911985<br>
+          Correo: jvargas161212@gmail.com</p>
+        </div>
+
+        <div class="referencia">
+          <p><strong>Maribel Tapias</strong><br>
+          Cargo: Manicurista independiente<br>
+          Tel: (+57) 3115730586<br>
+          Correo: mari161212tap@gmail.com</p>
+        </div>
+      </section>
+
+      <!-- BOTONES DE DESCARGA -->
+      <section class="descargas">
+        <button onclick="descargarPDF()">📄 Descargar en PDF</button>
+        <button onclick="descargarATS()">⚡ Descargar versión ATS</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
